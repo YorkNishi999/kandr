@@ -1,27 +1,14 @@
 #include<stdio.h>
 
-void swap( int *, int *);
-
-int main() {
-int a, b;
-
-	a = 10;
-	b = 24;
-
-	printf("a b: %d %d\n",a, b);
-
-	swap(&a, &b);
-
-	printf("a b: %d %d\n",a, b);
+void swap(char *v[], int i, int j);
 
 
-}
-
-void swap (int *x, int *y)
+void swap (char *v[], int i, int j)
 {
-	int tmp;
-	tmp = *x;
-	*x = *y;
-	*y = tmp;
+	char *tmp;
+
+	tmp = v[i];
+	v[i] = v[j];
+	v[j] = tmp;
 	
 }
