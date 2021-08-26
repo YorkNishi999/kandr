@@ -6,7 +6,7 @@ int bufp = 0; // buf 内の次の空き位置
 
 int getch(void)
 {
-	return (buf > 0) ? buf[--bufp] : getchar();
+	return (bufp > 0) ? buf[--bufp] : getchar();
 }
 
 void ungetch(int c)
